@@ -56,3 +56,11 @@ Meteor.methods({
 ```
 
 That's it!
+
+## How It Works
+
+`wrap-promise` will work with any promise object that supports the `.then(fulfilled, rejected)` interface.
+
+If the passed in argument has a `then` method, a `fulfilled` callback will be registered that returns a future with the fulfilled value, and a `rejected` callback will be added that throws the rejected value.
+
+If the passed in argument doesn't have a `then` method, it will be immediately returned.
