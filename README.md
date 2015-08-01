@@ -4,7 +4,7 @@
 
 ## The Problem
 
-When you're working with Promises in Meteor, there is no way to return a synchronous result without introducting Fibers or Futures. The results can feel clunky:
+When you're working with [Promises](https://www.npmjs.com/package/es6-promise) in Meteor, there is no way to return a synchronous result without introducting Fibers or Futures. The results can feel clunky:
 
 ```
 function returnsPromise() {
