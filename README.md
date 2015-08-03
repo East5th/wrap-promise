@@ -1,3 +1,9 @@
+## Warning
+
+You're probably better off using Meteor's [promise](https://github.com/meteor/promise) package. You can use `await` to synchronously wait for promises.
+
+I'll leave this package here for posterity.
+
 ## Installation
 
 `meteor add east5th:wrap-promise`
